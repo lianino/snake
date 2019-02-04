@@ -26,7 +26,7 @@ namespace Snake
         public Point(Point p)// конструктор 3
         {
             x = p.x;
-            y = p.x;
+            y = p.y;
             sym = p.sym;
         }
 
@@ -51,6 +51,12 @@ namespace Snake
         {
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
+        }
+
+        public void Clear()
+        {
+            sym = ' ';
+            Draw();
         }
 
         //Какая то магия С#
