@@ -48,7 +48,7 @@ namespace Snake
                     snake.HadleKey(key.Key);
                 }
             }
-
+            Console.WriteLine("Игра окончена!");
         }
     }
 }
